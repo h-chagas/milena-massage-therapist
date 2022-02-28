@@ -52,8 +52,8 @@ function hbMenuIcon() {
         y.innerHTML = '&#xe5cd;';
 
         x.style.flexDirection = 'column';
-        x.style.backgroundColor = 'var(--color0)';
-        z.style.backgroundColor = 'var(--color0)';
+        x.style.backgroundColor = 'var(--color6)';
+        z.style.backgroundColor = 'var(--color6)';
         x.style.overflow = 'hidden';
         x.style.padding = '2px';
         x.style.display = 'flex';
