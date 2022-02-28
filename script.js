@@ -47,16 +47,19 @@ function hbMenuIcon() {
     var z = document.querySelector('#milenaName');
     
     
+    
     if (x.style.display == 'none') {
+        
         x.style.display = 'block';
-        y.innerHTML = '&#xe5cd;';
-
         x.style.flexDirection = 'column';
         x.style.backgroundColor = 'var(--color6)';
-        z.style.backgroundColor = 'var(--color6)';
         x.style.overflow = 'hidden';
         x.style.padding = '2px';
         x.style.display = 'flex';
+
+        y.innerHTML = '&#xe5cd;';
+
+        z.style.backgroundColor = 'var(--color6)';
       
 
     } else {
@@ -68,32 +71,26 @@ function hbMenuIcon() {
     
 }
 
-//Milena Massage Therapist fade out while srolling - id="milenaName"
 
-var header = document.getElementById('milenaName');
 
-function fadeOutOnScroll(element) {
-	if (!element) {
-		return;
-	}
-	
-	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-	var elementHeight = element.offsetHeight;
-	var scrollTop = document.documentElement.scrollTop;
-	
-	var opacity = 1;
-	
-	if (scrollTop > distanceToTop) {
-		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-	}
-	
-	if (opacity >= 0) {
-		element.style.opacity = opacity;
-	}
-}
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-function scrollHandler() {
-	fadeOutOnScroll(header);
+// Get the header
+var header = document.getElementById("menuDiv");
+
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    header.style.top=0;
+  } else {
+    header.classList.remove("sticky");
+  }
 }
 
 window.addEventListener('scroll', scrollHandler);
