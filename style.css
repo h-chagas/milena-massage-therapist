@@ -40,13 +40,13 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 10;
 }
 
 #banner {
-
+    font-size: 0.9em;
     background-color: var(--color0);
     text-align: center;
     padding: 2px;
@@ -62,30 +62,32 @@ header {
     left: 0;
 }
 
-h1 {
-    background-color: transparent;
+#milenaName {
+    text-align: center;
     color: var(--color5);
-    font-weight: normal;
-    text-align: left;
-    font-size: 1.3em;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    font-size: 1.4em;
     margin: auto;
-    
+    display: inline;
+    width: 85%;
+}
+
+#menuDiv {
+    background-color: var(--color6);
+    padding: 12px 5px;
 }
 
 
 /*TOPNAV*/
 
 #menuIc {
-    text-align: right;
+    text-align: center;
     color: var(--color5);
-    text-align: right;
     background-color: transparent;
-    padding-left: 20px;
-    padding-top: 5px;
-    width: auto;
-    font-size: 1.3em;
+    padding-left: 5px;
+    width: 15%;
+    font-size: 1.5em;
+    display: inline;
+    
 }
 
 #menuIc:hover {
@@ -103,6 +105,7 @@ h1 {
     background-color: var(--color6);
 
 }
+
 
 nav>a {
 
