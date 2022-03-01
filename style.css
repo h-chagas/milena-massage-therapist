@@ -76,6 +76,7 @@ header {
     background-color: var(--color6);
     padding: 12px 5px;
     z-index: 10;
+    box-shadow: 1px 2px 5px rgba(117, 117, 117, 0.616);
 }
 
 .sticky {
@@ -201,11 +202,6 @@ nav>a:hover {
 
 /*Your therapist*/
 
-#therapist-title {
-    position: relative;
-    
-}
-
 .flex-container {
     flex-direction: column;
 
@@ -221,7 +217,8 @@ nav>a:hover {
     display: none;
 }
 
-#aboutDiv>p {
+#aboutDiv>p,
+#treatment {
     font-size: 16px;
     text-align: justify;
     line-height: 30px;
@@ -290,8 +287,27 @@ h3 {
     
 }
 
+#cvBtn {
+    margin: 50px 0px;
+    padding: 12px 20px;
+    background-color: var(--color1);
+    border: none;
+    font-size: 20px;
+    color: var(--color6)
+    
+}
 
-ul {
+#pdfIcon {
+    padding-right: 8px;
+}
+
+#cvBtn:hover{
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
+
+/*ul {
     list-style-type: none;
     padding-top: 20px;
 }
@@ -303,7 +319,7 @@ li {
     word-spacing: 2px;
     text-indent: 100px;
 }
-
+*/
 
 
 
