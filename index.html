@@ -110,8 +110,8 @@
                     </p>
 
                     <a href="fileToDownload/cv-Milena.pdf" target="_blank">
-                        <button id="cvBtn">
-                            <i class="fa-solid fa-file-pdf" id="pdfIcon"></i>
+                        <button class="cvBtn">
+                            <i class="fa-solid fa-file-pdf btnIcon"></i>
                             My CV
                         </button>
                     </a>
@@ -203,7 +203,7 @@
 
             </div>
 
-            <div id="cbdDiv" class="treatmentDivs">
+            <div id="cbdDiv">
 
                 <div>
                     <picture>
@@ -232,21 +232,23 @@
                 </div>
             </div>
 
-
-
-
         </section>
 
-        <h2 id="price-title" style="padding: 15px">
-            Pricing
-        </h2>
-
+        
         <section id="pricing" class="odd viewpStick">
 
-            <div id="pricingDiv2" class="pricingDiv">
+            <div id="price-title">
+                <h2>
+                    Pricing
+                </h2>
+                <h3>An investment for your health</h3>
+            </div>
+
+            <div class="pricingDiv">
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
                     <img src="/images/cards/single-massage-200px.jpg" alt="head massage picture" class="imgCard1">
+                    
                     <div class="container">
                         <table>
                             <tr>
@@ -255,7 +257,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <td colspan="2">Treatment for 1 person</td>
+                                <td colspan="2">Treatment for 1 person </td>
                             </tr>
                             <tr>
                                 <td>60 minutes</td>
@@ -271,7 +273,14 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <button><a href="https://wa.me/447478883335">Book now</a></button>
+                                    
+                                    <a href="https://wa.me/447478883335" target="_blank">
+                                        <button class="cvBtn">
+                                            <i class="fa-solid fa-calendar-check btnIcon"></i>
+                                            Book now
+                                        </button>
+                                    </a>
+
                                 </td>
                             </tr>
                         </table>
@@ -280,6 +289,7 @@
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
                     <img src="/images/cards/couple-massage-200px.png" alt="face treatment picture" class="imgCard2">
+                    
                     <div class="container">
                         <table>
                             <tr>
@@ -313,6 +323,7 @@
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
                     <img src="/images/cards/face-200px.jpg" alt="head massage picture" class="imgCard3">
+                    
                     <div class="container">
                         <table>
                             <tr>
@@ -343,8 +354,6 @@
                         </table>
                     </div>
                 </div>
-
-
             </div>
 
         </section>
