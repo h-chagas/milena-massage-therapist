@@ -1,5 +1,3 @@
-
-
 /*Opacity for the Cards (Pricing)*/
 function fadeIn() {
     var card = document.querySelector('.imgCard1');
@@ -54,9 +52,8 @@ function hbMenuIcon() {
         x.style.flexDirection = 'column';
         x.style.backgroundColor = 'var(--color6)';
         x.style.overflow = 'hidden';
-        x.style.padding = '2px';
         x.style.display = 'flex';
-
+        x.style.position = 'fixed';
         y.innerHTML = '&#xe5cd;';
 
         z.style.backgroundColor = 'var(--color6)';
@@ -83,11 +80,13 @@ var header = document.getElementById("menuDiv");
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
 
+
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     header.style.top=0;
+
   } else {
     header.classList.remove("sticky");
   }
