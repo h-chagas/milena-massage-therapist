@@ -29,29 +29,41 @@
 
     <div id="viewpStickId" class="viewpStick">
         
-        <header>
+        <header id="header" class="sticky">
             <div id="banner">
-                Located in Manchester <span class="flag-icon flag-icon-gbr"></span>
+                <div id="gbFlag">
+                    <span class="flag-icon flag-icon-gbr">
+                    </span>
+                    <span>Greater Manchester</span>
+                </div>
+                <div id="telMilena">
+                        <a href="tel:747-888-3335" target="_blank">
+                        <span class="fa-solid fa-message"></span>
+                        <span>07478 883335</span>
+                        </a>
+                </div>
             </div>
 
-            <div id="menuDiv" class="sticky">
+            <div id="menuDiv">
                 <h1 id="milenaName">
                     Milena Massage Therapist
                 </h1>
                 <span class="menuIcon material-icons" id="menuIc" onclick="hbMenuIcon()">&#xe5d2;</span>
-                
             </div>
 
+        
+
+
             <!--Open menu hamburger icon for mobile-->
-            
-            
             <nav id="topnav" class="flex-container">
                 <a href="#">Home</a>
                 <a href="#therapist-title">Therapist</a>
                 <a href="#treatment">Treatments</a>
                 <a href="#price-title">Pricing</a>
                 <a href="#mobile-title">Mobile</a>
-                <a id="bookMenuBtn" href="">Book</a>
+                
+                <div class="dropdown">
+                <button id="bookMenuBtn" onclick="openDropDownMenu()">Book</button>
                     <div class="dropdown-content" id="dropdownMenu">
                         <a href="https://wa.me/447478883335" target="_blank">
                             <img src="images/nav-icons/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon-30px.png"
@@ -64,13 +76,14 @@
                             <img src="images/nav-icons/134146_mail_email_icon.png" alt="whatsapp-icon">
                         </a>
                     </div>
+                </div>
             </nav>
         </header>
 
         <div id="mainPic">
             <picture>
-                <source media="(max-width: 499px)" srcset="images/carousel/milena-mainPic1.png">
-                <img src="images/carousel/milena-mainPic-wide.JPG" alt="manchester city overview">
+                <source media="(max-width: 499px)" srcset="images/carousel/milena-mainPic2.png">
+                <img src="images/carousel/milena-mainPic1.png" alt="manchester city overview">
             </picture>
         </div>
 
