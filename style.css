@@ -574,7 +574,7 @@ footer {
     color: var(--color6);
     text-align: center;
     background-color: var(--color4);
-    height: 120px;
+    height: fit-content;
     padding: 10px 5px;
     border-top: 2px solid rgba(0, 0, 0, 0.349);
 
@@ -582,9 +582,31 @@ footer {
 
 
 
-footer>a>img {
-    padding: 10px;
+.footerIcons {
+    padding: 20px;
+    color: var(--color6);
+    font-size: 40px;
+
 }
+
+#menu-footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.list-inline-item {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.list-inline-item a {
+    text-decoration: none;
+    color: var(--color0);
+  }
+
+.list-inline-item a:hover {
+    cursor: pointer;
+  }
 
 
 
@@ -593,15 +615,26 @@ footer>a>img {
     color: white;
     float: left;
     padding-left: 20px;
+    font-size: 1em;
+}
+
+#topArrow {
+    display: block;
+    margin: 15px 0;
+    
+}
+
+#topArrow > p {
+    text-align: center;
 }
 
 
 #developer {
-
+   
     display: block;
     text-align: right;
     font-size: 0.9em;
-    padding: 15px;
+    display: block;
 
 }
 
@@ -614,13 +647,6 @@ footer>a>img {
 
 
 
-#developer {
-    display: block;
-    text-align: center;
-    font-size: 0.8em;
-    padding-bottom: 10px;
-
-}
 
 
 
