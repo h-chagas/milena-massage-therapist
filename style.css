@@ -318,7 +318,7 @@ h2 {
 h3 {
     color: rgb(63, 62, 62);
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1.1em;
     letter-spacing: 1px;
     text-align: center;
     margin: 0px;
@@ -336,6 +336,7 @@ h3 {
     border: none;
     font-size: 20px;
     color: var(--color6);
+    border-radius: 2px;
     
 }
 
