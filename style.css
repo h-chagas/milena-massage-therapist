@@ -172,12 +172,6 @@ nav>a:hover,
 
 
 
-
-
-
-
-
-
 /*dropdown contact menu*/
 
 .dropdown {
@@ -257,7 +251,8 @@ nav>a:hover,
 }
 
 #aboutDiv>p,
-#treatment {
+#treatment,
+#mobile p {
     font-size: 16px;
     text-align: justify;
     line-height: 30px;
@@ -548,17 +543,8 @@ th, td {
 /*Home Mobile Massage */
 
 #mobile {
-    flex-direction: column;
-    height: fit-content;
-}
-
-#mobile p {
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-    text-indent: 15px;
-
+    
+    
 }
 
 
@@ -575,11 +561,7 @@ th, td {
 
 
 .mobileDiv {
-    flex-direction: row;
-    width: 50%;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 30px;
+    
 }
 
 
