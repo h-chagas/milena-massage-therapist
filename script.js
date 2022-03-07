@@ -31,8 +31,6 @@ var year = date.getFullYear();
 document.querySelector('#copyright').innerText += year;
 
 
-
-
 /**//**//* MOBILE *//**//**/
 
 /*
@@ -42,7 +40,7 @@ Change menu hamburger button to 'x' when menu open
 function hbMenuIcon() {
     var x = document.getElementById("topnav");
     var y = document.getElementById('menuIc');
-    var z = document.querySelector('#milenaName');
+      
     
     if (x.style.display == 'none') {
         
@@ -54,16 +52,23 @@ function hbMenuIcon() {
         x.style.position = 'fixed';
         y.innerHTML = '&#xe5cd;';
 
-        z.style.backgroundColor = 'var(--color6)';
-      
+          
     } else {
         x.style.display = 'none';
         y.innerHTML = '&#xe5d2;';
-        z.style.backgroundColor = 'transparent';
-        
+
         }
-    
-}
+
+    }
+
+    window.addEventListener('mouseup', closeMenu());
+
+    function closeMenu() {
+        var x = document.getElementById("topnav");
+        x.style.display = 'none';
+    }
+
+
 
 
 

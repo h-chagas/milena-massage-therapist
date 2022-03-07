@@ -70,6 +70,10 @@ body {
     color: black;
 }
 
+#telMilena :nth-child(1) {
+    padding-right: 3px;
+}
+
 .viewpStick {
     margin: auto;
     text-align: center;
@@ -110,10 +114,11 @@ body {
     text-align: center;
     color: var(--color5);
     background-color: transparent;
-    padding-left: 5px;
+    padding-left: 30px;
     width: 15%;
-    font-size: 1.5em;
+    font-size: 2em;
     display: inline;
+    
     
 }
 
