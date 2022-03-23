@@ -573,7 +573,7 @@ footer {
     font-size: 0.8em;
     color: var(--color6);
     text-align: center;
-    background-color: var(--color4);
+    background-color: var(--color5);
     height: fit-content;
     padding: 10px 5px;
     border-top: 2px solid rgba(0, 0, 0, 0.349);
