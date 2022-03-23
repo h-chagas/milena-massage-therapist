@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Massage in Manchester</title>
-    
+
     <link rel="shortcut icon" href="images/favicon/fav2/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/all.css">
-    
+
     <link rel="stylesheet" href="flag-icons-master/css/flag-icon.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -21,14 +21,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-    
+
+
 
 </head>
 
 <body>
 
+    <div id="tothetopReference"></div>
     <div id="viewpStickId" class="viewpStick">
-        
+
         <header id="header" class="sticky">
             <div id="banner">
                 <div id="gbFlag">
@@ -37,10 +39,10 @@
                     <span>Greater Manchester</span>
                 </div>
                 <div id="telMilena">
-                        <a href="https://wa.me/447478883335" target="_blank">
-                            <span class="fa-brands fa-whatsapp"></span>
+                    <a href="https://wa.me/447478883335" target="_blank">
+                        <span class="fa-brands fa-whatsapp"></span>
                         <span>07478 883335</span>
-                        </a>
+                    </a>
                 </div>
             </div>
 
@@ -48,24 +50,35 @@
                 <h1 id="milenaName">
                     Milena Massage Therapist
                 </h1>
-                <span 
-                class="menuIcon material-icons" id="menuIc" 
-                onclick="hbMenuIcon()">
-                &#xe5d2;
+                <span class="menuIcon material-icons" id="menuIc" onclick="hbMenuIcon()">
+                    &#xe5d2;
                 </span>
             </div>
 
-        
+
             <!--Open menu hamburger icon for mobile-->
             <nav id="topnav" class="flex-container">
-                <a href="#" class="anchor">Home</a>
-                <a href="#therapist-title">Therapist</a>
-                <a href="#treatment">Treatments</a>
-                <a href="#price-title">Pricing</a>
-                <a href="#mobile-title">Mobile</a>
-                
+
+                <ul id="listMenu">
+                    <a href="#" onclick="hbMenuIcon()">
+                        <li>Home</li>
+                    </a>
+                    <a href="#therapistScroll" onclick="hbMenuIcon()">
+                        <li>About me</li>
+                    </a>
+                    <a href="#treatmentsScroll" onclick="hbMenuIcon()">
+                        <li>Treatments</li>
+                    </a>
+                    <a href="#pricingScroll" onclick="hbMenuIcon()">
+                        <li>Pricing</li>
+                    </a>
+                    <a href="#homeMobileScroll" onclick="hbMenuIcon()">
+                        <li>Home Mobile Massage</li>
+                    </a>
+                </ul>
+
                 <div class="dropdown">
-                <button id="bookMenuBtn" onclick="openDropDownMenu()">Book</button>
+                    <button id="bookMenuBtn" onclick="openDropDownMenu()">Book</button>
                     <div class="dropdown-content" id="dropdownMenu">
                         <a href="https://wa.me/447478883335" target="_blank">
                             <img src="images/nav-icons/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon-30px.png"
@@ -82,7 +95,8 @@
             </nav>
         </header>
 
-        <div style="height: 50px;"><!--Used to balance picture height-->
+        <div style="height: 50px;">
+            <!--Used to balance picture height-->
 
         </div>
 
@@ -93,17 +107,20 @@
             </picture>
         </div>
 
-        
+
 
     </div>
 
-    
+
     <main>
-        
+
+        <!--Used to scroll-->
+        <div id="therapistScroll" style="height: 50px; background-color: var(--color0);"></div>
+
         <section class="odd viewpStick">
 
             <div class="flex-container">
-                
+
                 <div id="aboutDiv">
 
                     <h2 id="therapist-title">
@@ -117,14 +134,17 @@
                         My name is <strong>Milena</strong> and I have been massage therapist for <strong>5
                             years</strong>. During this time, I have gotten large experience working for Urban Massage
                         and as private therapist performing few hundreds massages in London, Birminghan and in
-                        Greater Manchester. 
+                        Greater Manchester.
                         <br>
-                        I am passionate about massage and the benefits that it brings, <em>improving health and wellbeing for all my clients</em>. 
+                        I am passionate about massage and the benefits that it brings, <em>improving health and
+                            wellbeing for all my clients</em>.
                         <br>
-                        As a self-motivated learner, I am currently studying Level 5 Sports Massage keep improving my techniques and to find out new ones - to always offer the best personalised treatment.
+                        As a self-motivated learner, I am currently studying Level 5 Sports Massage keep improving my
+                        techniques and to find out new ones - to always offer the best personalised treatment.
                         <br>
-                        As <strong>mobile therapist</strong>, my costumers get advantage to get treated in the confort of their home!
-                        
+                        As <strong>mobile therapist</strong>, my costumers get advantage to get treated in the confort
+                        of their home!
+
                     </p>
 
                     <a href="fileToDownload/cv-Milena.pdf" target="_blank">
@@ -133,14 +153,17 @@
                             My CV
                         </button>
                     </a>
-                    
 
-                    
-                    
+
+
+
                 </div>
             </div>
 
         </section>
+
+        <!--Used to scroll-->
+        <div id="treatmentsScroll" style="height: 50px; background-color: var(--color0);"></div>
 
         <section id="treatment" class="even viewpStick treatmentSec">
 
@@ -252,12 +275,15 @@
 
         </section>
 
-        
+
+        <!--Used to scroll-->
+        <div id="pricingScroll" style="height: 50px; background-color: var(--color0);"></div>
+
         <section id="pricing" class="odd viewpStick">
 
             <div id="price-title">
                 <h2>
-                    Pricing
+                    PRICING
                 </h2>
                 <h3>An investment for your health</h3>
             </div>
@@ -265,8 +291,9 @@
             <div class="pricingDiv">
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
-                    <img src="/images/treatments/cards/single-massage-200px.jpg" alt="head massage picture" class="imgCard1">
-                    
+                    <img src="/images/treatments/cards/single-massage-200px.jpg" alt="head massage picture"
+                        class="imgCard1">
+
                     <div class="container">
                         <table>
                             <tr>
@@ -291,7 +318,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    
+
                                     <a href="https://wa.me/447478883335" target="_blank">
                                         <button class="cvBtn">
                                             <i class="fa-solid fa-calendar-check btnIcon"></i>
@@ -306,8 +333,9 @@
                 </div>
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
-                    <img src="/images/treatments/cards/couple-massage-200px.png" alt="face treatment picture" class="imgCard2">
-                    
+                    <img src="/images/treatments/cards/couple-massage-200px.png" alt="face treatment picture"
+                        class="imgCard2">
+
                     <div class="container">
                         <table>
                             <tr>
@@ -348,7 +376,7 @@
 
                 <div class="card" onmouseover="fadeIn()" onmouseout="fadeOut()">
                     <img src="/images/treatments/cards/face-200px.jpg" alt="head massage picture" class="imgCard3">
-                    
+
                     <div class="container">
                         <table>
                             <tr>
@@ -362,7 +390,7 @@
                             <tr>
                                 <td colspan="2">Facial massage <br> + products</td>
                             </tr>
-                            
+
                             <tr>
                                 <td>30 minutes</td>
                                 <td>25 GBP</td>
@@ -377,7 +405,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    
+
                                     <a href="https://wa.me/447478883335" target="_blank">
                                         <button class="cvBtn">
                                             <i class="fa-solid fa-calendar-check btnIcon"></i>
@@ -394,8 +422,12 @@
 
         </section>
 
+
+        <!--Used to scroll-->
+        <div id="homeMobileScroll" style="height: 50px; background-color: var(--color0);"></div>
+
         <h2 id="mobile-title">
-            Home Mobile Massage
+            HOME MOBILE MASSAGE
         </h2>
 
         <h3>Genuine therapy in the comfort of your home</h3>
@@ -430,7 +462,7 @@
                     <li>
                         <i class="fa-solid fa-map-location-dot"></i>
                         <strong>Mobile treatment</strong>
-                        
+
                     </li>
 
                     <li>
@@ -462,56 +494,63 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
 
-        <p>Follow me on my Social Media</p>
 
-        <a href="https://www.facebook.com/milenamassage1">
-            <i class="fa-brands fa-facebook footerIcons"></i>
-        </a>
 
-        <a href="https://www.instagram.com/massageinmanchester/">
-            <i class="fa-brands fa-instagram-square footerIcons"></i>
-            </img>
-        </a>
 
-        <a href="https://wa.me/447478883335">
-            <i class="fa-brands fa-whatsapp-square footerIcons"></i>
-        </a>
+        <p id="tothetop">
+            <a href="#tothetopReference">
+                <i class="fa-solid fa-arrow-up"></i>To the top
+            </a>
+        </p>
+
+
+
+        <p>Follow me</p>
+
+
+        <div class="social">
+            <a href="https://www.facebook.com/milenamassage1">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/massageinmanchester/">
+                <i class="fa-brands fa-instagram-square"></i>
+            </a>
+
+            <a href="https://wa.me/447478883335">
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </a>
+        </div>
 
 
 
         <div id="menu-footer">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#project">Project</a></li>
-                <li class="list-inline-item"><a href="#successStories">Success stories</a></li>
-                <li class="list-inline-item"><a href="#whatsOn">What's on</a></li>
-                <li class="list-inline-item"><a href="#contact">Contact us</a></li>
-                <li class="list-inline-item"><a href="#resources">Resources</a></li>
+                <li class="list-inline-item"><a href="#">HOME</a></li>
+                <li class="list-inline-item"><a href="#therapistScroll">ABOUT ME</a></li>
+                <li class="list-inline-item"><a href="#treatmentsScroll">TREATMENTS</a></li>
+                <li class="list-inline-item"><a href="#pricingScroll">PRICING</a></li>
+                <li class="list-inline-item"><a href="#homeMobileScroll">HOME MOBILE MASSAGE</a></li>
             </ul>
         </div>
 
-
-        <div id='topArrow'>
-            <p id="top"><a href="#">
-                <i class="fa-solid fa-arrow-up"></i>
-                Back to top</a>
-            </p>
-        </div>
-        
+    
         <p> &copy; Milena Flores | All rights reserved </p>
         <span id='copyright'></span>
 
-        
 
-        <p id="developer">| Developed by <a href="https://github.com/h-chagas">Hugo Chagas</a> |</p>
+        <p id="developer">Designed and developed by
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/h-chagas">Hugo Chagas</a>
+        </p>
 
 
     </footer>
 
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

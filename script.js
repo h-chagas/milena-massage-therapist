@@ -1,3 +1,4 @@
+
 /*Opacity for the Cards (Pricing)*/
 function fadeIn() {
     var card = document.querySelector('.imgCard1');
@@ -107,7 +108,7 @@ function openDropDownMenu() {
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('#bookMenuBtn')) {
-      var dropdowns = document.getElementById("dropdownMenu");
+      var dropdowns = document.getElementById("topnav");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
