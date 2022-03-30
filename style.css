@@ -6,6 +6,11 @@
 /* hand writing font */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+/* Milena's numbers font */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+
+
 :root {
     --color0: #F2F2F2;
     --color1: #2793F2;
@@ -74,6 +79,10 @@ body {
     padding-right: 3px;
 }
 
+#telMilena a span:nth-child(2) {
+    display: none;
+}
+
 .viewpStick {
     margin: auto;
     text-align: center;
@@ -134,6 +143,7 @@ body {
     text-align: center;
     position: relative;
     width: 100%;
+    height: auto;
     margin: auto;
     background-color: var(--color6);
     z-index: 1;
@@ -172,6 +182,14 @@ body {
 }
 
 
+#bookLinks a {
+    margin-right: 50px;
+    
+}
+
+
+
+
 
 /*dropdown contact menu*/
 
@@ -179,8 +197,10 @@ body {
 
     position: relative;
     display: inline-block;
+    height: fit-content;
 
 }
+
 
 .dropdown-content {
     /* Dropdown Content (Hidden by Default) */
@@ -188,6 +208,7 @@ body {
     position: absolute;
     background-color: var(--color6);
     width: 100px;
+    height: fit-content;
     z-index: 1;
 }
 
@@ -224,9 +245,12 @@ body {
 
 
 
+
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
+    height: 150px;
 }
 
 
@@ -551,6 +575,8 @@ th, td {
 .mobileDiv li {
     font-size: 1em;
     line-height: 2.5em;
+    list-style: none;
+    padding-bottom: 15px;
 
 }
 
@@ -566,6 +592,81 @@ th, td {
 
 
 
+/*Milena's numbers*/
+
+
+#div2 {
+    height: auto;
+    background-color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color0);
+    
+  }
+
+ 
+  
+  #div2  p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+ }
+
+  #div2  p:nth-child(1) {
+    font-size: 1.6em;
+    padding-bottom: 90px;
+  }
+
+  #div2  p:nth-child(2) {
+    font-size: 1em;
+    padding-bottom: 40px;
+    
+  }
+
+#div2 p a {
+  text-decoration: none;
+    color: var(--color5);
+}
+  
+  #div2-1 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+  
+  
+  #div2-1a,
+  #div2-1b,
+  #div2-1c {
+    width: 90%;
+    
+  }
+
+  #div2-1a p:nth-child(1),
+  #div2-1b p:nth-child(1),
+  #div2-1c p:nth-child(1) {
+        font-size: 2em;
+        padding-bottom: 20px;
+        font-weight: 900;
+  }
+
+  #div2-1a p:nth-child(2),
+  #div2-1b p:nth-child(2),
+  #div2-1c p:nth-child(2) {
+        font-size: 1.5em;
+        padding-bottom: 70px;
+        
+  }
+
+
+
+
+
+
+
 
 /*footer*/
 
@@ -573,7 +674,7 @@ th, td {
     border: 1px solid rgb(37, 37, 37);
     background-color: rgb(65, 65, 65);
     padding: 10px 20px;
-    margin: 40px 30%;
+    margin: 40px 10%;
     text-align: center;
     color: var(--color0);
 }
@@ -702,50 +803,29 @@ th, td {
 @media screen and (min-width: 600px) {
     /*Ipads, Tablets*/
 
-    #banner {
-
-        text-align: right;
-        padding-right: 10px;
-        font-size: 1.7em;
-        position: fixed;
-
-    }
-
-    h1 {
+   
+   h1 {
         font-size: 3em;
         padding: 10px;
         text-align: left;
     }
 
+    #telMilena a span:nth-child(2) {
+        display: contents;
+    }
 
+    
     /*topnav*/
 
-    #dropdownMenu a {
-        display: inline;
-        background-color: var(--color6);
+    #listMenu > a > li {
+        font-size: 0.9em;
     }
 
-    #menuIc {
-        display: none;
-
+    #aboutDiv {
+        margin: auto;
     }
-
-    #topnav {
-        background-color: var(--color6);
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-
-
-
-
-
-
-
-
+    
+    
 
 
 
@@ -785,19 +865,24 @@ th, td {
 
 
 
-
-
-
-
     /*Treatments*/
 
-    .treatmentDivs>div {
+    #classicDiv {
+        width: 100%;
+    }
+
+    #treatment {
+        display: flex;
+    }
+
+    .treatmentDivs > div {
+        width: 40%;
         flex-direction: row;
 
     }
 
-    .treatmentDivs img {
-        border-radius: 5px;
+    .treatmentDivs picture {
+        text-align: left;
     }
 
     #deepTisDiv img {
@@ -814,12 +899,11 @@ th, td {
 
 
 
-
-
-
-
-
     /*Pricing and cards*/
+
+    .card {
+        width: 50%;
+    }
 
 
     #pricing {
@@ -839,7 +923,179 @@ th, td {
 
 
 
+    /*Home Mobile Massage */
 
+    .mobileDiv {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .mobileDiv > p:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .mobileDiv li {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+
+    
+
+   
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+    /*Desktops, large screens*/
+
+    #gbFlag span,
+    #telMilena span {
+
+        font-size: 2em;
+    }
+
+    #milenaName {
+        font-size: 3em;
+        padding: 5px;
+        text-align: left;
+    }
+
+    #telMilena a span:nth-child(2) {
+        display: contents;
+    }
+
+    
+    /*topnav*/
+
+    #listMenu > a > li {
+        font-size: 2em;
+    }
+
+    #bookLinks a i {
+        font-size: 2em;
+    }
+
+    #aboutDiv {
+        margin: auto;
+    }
+
+    #menuDiv span {
+        font-size: 3em;
+    }
+    
+    
+    /*Your therapist*/
+
+    #aboutDiv {
+        width: 90%;
+        
+    }
+
+    #aboutDiv>h2,
+    #treatments-title,
+    #price-title>h2,
+    #mobile-title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #aboutDiv>h3,
+    #classicDiv>h3,
+    #price-title>h3,
+    h3 {
+        font-size: 1.6em;
+        padding-bottom: 40px;
+    }
+
+    #aboutDiv>p {
+        padding: 10px;
+        font-size: 1.4em;
+        line-height: 40px;
+    }
+
+    .cvBtn {
+        font-size: 35px;
+    }
+
+    #pictureDiv {
+        width: 30%;
+    }
+
+    #pictureImg {
+        border-radius: 3px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0);
+        margin-top: 20px;
+        margin-bottom: 25px;
+
+    }
+
+    .odd,
+    .even {
+        padding: 40px;
+        font-size: 1.2em;
+    }
+
+    h2 {
+        padding: 30px;
+
+    }
+
+
+
+    /*Treatments*/
+
+    #treatments-title {
+        display: block;
+        text-align: center;
+    }
+
+    .treatmentDivs {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+    }
+
+   
+    .treatmentDivs>div:nth-child(1) {
+        width: 40%;
+        float: left;
+        padding-left: 30px;
+    }
+
+    .treatmentDivs img {
+        padding: 0;
+        
+    }
+
+    .treatmentDivs>div:nth-child(2) {
+        width: 50%;
+        float: right;
+        padding-right: 30px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    
+   
+
+
+    /*Pricing and cards*/
+
+    .pricingDiv {
+        display: flex;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+
+    #pricing {
+        height: auto;
+    }
 
 
 
@@ -849,52 +1105,67 @@ th, td {
 
     #mobile {
         display: flex;
+        font-size: 1.4em;
+        
     }
 
-    .mobileDiv li {
+    #mobile p {
         font-size: 1.2em;
-
+        text-align: justify;
+        line-height: 40px;
     }
 
     .mobileDiv {
-        width: auto;
-        margin-top: 15px;
+        width: 50%;
+        margin: 15px 20px 40px 20px;
+        
+    }
+
+    
+    
+    .mobileDiv li {
+        font-size: 1.4em;
+        padding-bottom: 20px;
     }
 
 
 
+    /*Milena's numbers*/
 
 
+  
+  #div2 p:nth-child(1) {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#div2-1a p:nth-child(1),
+#div2-1b p:nth-child(1),
+#div2-1c p:nth-child(1) {
+        font-size: 3em;
+        
+  }
+
+  #div2-1a p:nth-child(2),
+  #div2-1b p:nth-child(2),
+  #div2-1c p:nth-child(2) {
+        font-size: 2em;
+        
+        
+  }
 
 
-    /*footer*/
-
-
-
-
-
+#tothetop {
+    align-items: center;
+    margin: 40px 40%;
+}
 
 
 }
 
 
-@media screen and (min-width: 769px) {
-    /*Small screens, laptops*/
 
-}
-
-
-
-@media screen and (min-width: 1450px) {
-    /*Desktops, large screens*/
-
-
-
-}
-
-
-
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1800px) {
     /*XL screens, TVs*/
 
 }

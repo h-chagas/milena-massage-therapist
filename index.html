@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Massage in Manchester</title>
+    
 
     <link rel="shortcut icon" href="images/favicon/fav2/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -41,6 +42,7 @@
                 <div id="telMilena">
                     <a href="https://wa.me/447478883335" target="_blank">
                         <span class="fa-brands fa-whatsapp"></span>
+                        <span>Book now &nbsp; </span>
                         <span>07478 883335</span>
                     </a>
                 </div>
@@ -75,8 +77,25 @@
                     <a href="#homeMobileScroll" onclick="hbMenuIcon()">
                         <li>Home Mobile Massage</li>
                     </a>
+                    <a href="#" onclick="hbMenuIcon()">
+                        <li>Book</li>
+                        <li id="bookLinks">
+                            <a href="https://wa.me/447478883335">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="tel:747-888-3335">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="sms:+447478883335">
+                                <i class="fa-solid fa-comment-sms"></i>
+                            </a>
+                            <a href="mailto:mfloreschagas@gmail.com">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </li>
+                    </a>
                 </ul>
-
+                <!--
                 <div class="dropdown">
                     <button id="bookMenuBtn" onclick="openDropDownMenu()">Book</button>
                     <div class="dropdown-content" id="dropdownMenu">
@@ -92,6 +111,7 @@
                         </a>
                     </div>
                 </div>
+                -->
             </nav>
         </header>
 
@@ -102,7 +122,9 @@
 
         <div id="mainPic">
             <picture>
-                <source media="(max-width: 499px)" srcset="images/carousel/milena-mainPic2.png">
+                <source media="(min-width: 1200px)" srcset="images/carousel/milena-mainPic-wide-1200px.JPG">
+                <source media="(min-width: 600px)" srcset="images/carousel/milena-mainPic-wide-650px.JPG">
+                <source media="(min-width: 300px)" srcset="images/carousel/milena-mainPic2.png">
                 <img src="images/aboutMe/milena-mainPic1.png" alt="manchester city overview">
             </picture>
         </div>
@@ -135,7 +157,8 @@
                             years</strong>. During this time, I have gotten large experience working for Urban Massage
                         and as private therapist performing few hundreds massages in London, Birminghan and in
                         Greater Manchester.
-                        <br>
+                    </p>
+                    <p>
                         I am passionate about massage and the benefits that it brings, <em>improving health and
                             wellbeing for all my clients</em>.
                         <br>
@@ -167,15 +190,16 @@
 
         <section id="treatment" class="even viewpStick treatmentSec">
 
+            <h2 id="treatments-title">
+                TREATMENTS
+            </h2>
+
+            <h3>
+                Kind of treatments for everyone
+            </h3>
+
             <div id="classicDiv" class="treatmentDivs">
-
-                <h2 id="treatments-title">
-                    TREATMENTS
-                </h2>
-
-                <h3>
-                    Kind of treatments for everyone
-                </h3>
+               
 
                 <div>
                     <picture>
@@ -442,7 +466,7 @@
                 </p>
                 <p>
                     The benefits of receiving a massage in the comfort of your own home or hotel room are innumerable,
-                    and include eliminating hassles like having to drive through rush hour traffic or finding your way
+                    and include eliminating hassles like having to drive through rush hour traffic or finding your w
                     in an unfamiliar location while on vacation.
                 <p>
                     This greatly reduces stress, both before and after the massage, so that you can benefit most deeply
@@ -481,16 +505,55 @@
                     </li>
 
                 </ul>
-                <p style="margin-top: 30px;">
+                <p>
                     Due to hygiene reasons, the client must provide their own towels (at least one).
                 </p>
-                <p style="margin-top: 30px; font-size: 0.9em;">
+                <p>
                     *** 10 £ extra fee will be applied when choosing <b>CBD Oil</b> in your
                     massage.
                 </p>
             </div>
 
         </section>
+
+
+        <!--Milena's Numbers-->
+
+        <div id='div2'>
+            <p>
+                In the Greater Manchester <br> since 2018
+            </p>
+
+            <div id='div2-1'>
+
+                <div id='div2-1a' class='div2-1'>
+                    <p>+ 67.500</p>
+                    <p>minutes of wellness delivered</p>
+                </div>
+
+                <div id='div2-1b' class='div2-1'>
+                    <p>+ 360</p>
+                    <p>5-star reviews</p>
+                </div>
+
+                <div id='div2-1c' class='div2-1'>
+                    <p>+ 5</p>
+                    <p>years of experience</p>
+                </div>
+
+            </div>
+
+            <p>
+                <a href="/reviews.html" target="_blank">Click here</a>
+                <br>
+                to read some nice reviews :)
+            </p>
+        </div>
+
+
+
+
+
 
     </main>
 
@@ -536,12 +599,12 @@
             </ul>
         </div>
 
-    
+
         <p> &copy; Milena Flores | All rights reserved </p>
         <span id='copyright'></span>
 
 
-        <p id="developer">Designed and developed by
+        <p id="developer">Designed and developed by <br>
             <i class="fa-brands fa-github"></i>
             <a href="https://github.com/h-chagas">Hugo Chagas</a>
         </p>
