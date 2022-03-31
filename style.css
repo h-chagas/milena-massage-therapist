@@ -255,7 +255,10 @@ body {
 
 
 
-
+.baseToScroll {
+    height: 50px;
+    background-color: var(--color0);
+}
 
 
 
@@ -405,6 +408,11 @@ li {
     height: fit-content;
 }
 
+#treatments-title,
+#treatment > h3 {
+    width: 100%;
+}
+
 
 .treatmentDivs {
     flex-direction: column;
@@ -433,13 +441,6 @@ li {
 #cbdDiv img {
     width: 100%;
 }
-
-
-
-
-
-
-
 
 
 
@@ -583,6 +584,12 @@ th, td {
 .mobileDiv ul {
     text-align: center;
     align-items: center;
+    background-color: var(--color0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
 }
 
 
@@ -950,6 +957,11 @@ th, td {
 
 @media screen and (min-width: 1200px) {
     /*Desktops, large screens*/
+
+    .baseToScroll {
+        height: 120px;
+        background-color: var(--color0);
+    }
 
     #gbFlag span,
     #telMilena span {
